@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Air Detection</title>
+</head>
+<body>
+  <div class="canvas">
+     <div class="row flex mb-1">
+       <div class="col w-4">
+         <div class="title">空氣品質指標(AQI)</div>
+         <div class="selectBar">
+           <select class="w-100" name="select-country">
+             <option value="">請選擇地區:</option>
+             <option value="基隆市">基隆市</option>
+             <option value="新北市">新北市</option>
+             <option value="臺北市">臺北市</option>
+             <option value="桃園市">桃園市</option>
+             <option value="新竹市">新竹市</option>
+             <option value="新竹縣">新竹縣</option>
+             <option value="苗栗縣">苗栗縣</option>
+             <option value="臺中市">臺中市</option>
+             <option value="彰化縣">彰化縣</option>
+             <option value="南投縣">南投縣</option>
+             <option value="雲林縣">雲林縣</option>
+             <option value="嘉義縣">嘉義縣</option>
+             <option value="嘉義市">嘉義市</option>
+             <option value="澎湖縣">澎湖縣</option>
+             <option value="臺南市">臺南市</option>
+             <option value="高雄市">高雄市</option>
+             <option value="屏東縣">屏東縣</option>
+             <option value="宜蘭縣">宜蘭縣</option>
+             <option value="花蓮縣">花蓮縣</option>
+             <option value="臺東縣">臺東縣</option>
+             <option value="連江縣">連江縣</option>
+             <option value="金門縣">金門縣</option>
+           </select>
+         </div>
+       </div>
+       <div class="col ml-1">
+         <table id="index" class="w-8" cellspacing="0">
+           <tr>
+             <th>0~50</th>
+             <th>51~100</th>
+             <th>101~150</th>
+             <th>151~200</th>
+             <th>201~300</th>
+             <th>301~400</th>
+           </tr>
+           <tr>
+             <td>良好</td>
+             <td>普通</td>
+             <td>對敏感族群不健康</td>
+             <td>對所有族群不健康</td>
+             <td>非常不健康</td>
+             <td>危害</td>
+           </tr>
+         </table>
+       </div>
+     </div>
+
+     <div class='row flex space align'>
+        <div class="country">></div>
+        <div class="dash"> </div>
+        <div class="publishTime"></div>
+     </div>
+     
+
+     <div class="row flex">
+       <div class="col w-4">
+          <div class="site bd-3 h-97 flex">
+              <div class="infoName w-2 "></div>
+              <div class="w-25 infoValue"></div>
+            </div>
+            <div class="info"> 
+              <table id="infotb" class="w-100">
+                <tr>
+                  <td>臭氧<span>O3 (ppb)</span></td>
+                  <td class="O3"></td>
+                </tr>
+                <tr>
+                  <td>懸浮微粒<span>PM10 (μg/m³)</span></td>
+                  <td class="PM10"></td>
+                </tr>
+                <tr>
+                  <td>細懸浮微粒<span>PM2.5 (μg/m³)</span></td>
+                  <td class="PM25"></td>
+                </tr>
+                <tr>
+                  <td>一氧化碳<span>CO (ppm)</span></td>
+                  <td class="CO"></td>
+                </tr>
+                <tr>
+                  <td>二氧化硫<span>SO2 (ppb)</span></td>
+                  <td class="SO2"></td>
+                </tr>
+                <tr>
+                  <td>二氧化氮<span>NO2 (ppb)</span></td>
+                  <td class="NO2"></td>
+                </tr>
+              </table>
+            </div>
+       </div>
+        
+       <div class="sitesInfo col w-4 ml-1">
+        
+       </div>
+       <div class="sitesInfo col w-4 ml-1">
+
+       </div>
+     </div>
+
+     <div class="row h-34 banner">
+       <div class="left">資料來源：行政院環境保護署</div>
+       <div class="right">Copyright © 2019 HexSchool. All rights reserved.</div>
+     </div>
+  </div>
+</body>

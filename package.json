@@ -1,0 +1,23 @@
+{
+  "name": "air_detection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "https": "^1.0.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
